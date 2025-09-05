@@ -23,3 +23,77 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+h1 {
+  font-family: 'Georgia', serif; 
+  color: var(--cor-principal);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.receita-imagem {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  margin-bottom: 30px;
+}
+
+.info-container {
+  display: flex; 
+  justify-content: space-around; 
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+h2 {
+  color: var(--cor-principal);
+  border-bottom: 2px solid var(--cor-principal); 
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.lista-ingredientes {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-ingredientes li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee; 
+}
+
+.lista-ingredientes li:last-child {
+  border-bottom: none;
+}
+
+.modo-preparo {
+  padding-left: 20px; 
+}
+
+.modo-preparo li {
+  margin-bottom: 15px; 
+  line-height: 1.7;
+}
+
+.modo-preparo li::marker {
+  font-weight: bold;
+  color: var(--cor-principal);
+}
+
+@media (max-width: 600px) {
+  .receita-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em; 
+  }
+
+  .info-container {
+    flex-direction: column;
+    gap: 15px; 
+  }
+}
+
+
+
