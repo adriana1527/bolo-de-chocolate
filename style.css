@@ -1,69 +1,25 @@
+
+:root {
+  --cor-principal: #2d6a4f; /
+  --cor-texto: #333;
+  --cor-fundo: #f8f9fa;
+  --fonte-principal: 'Helvetica', Arial, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6; 
+  margin: 0;
+  padding: 20px;
 }
 
-/* O "card" que contém toda a receita */
-.card-receita {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-    overflow: hidden; /* Garante que a imagem não ultrapasse as bordas arredondadas */
-}
-
-/* Estilo para a imagem da receita */
-.imagem-receita {
-    width: 100%;
-    height: auto;
-}
-
-/* Estilo para o título principal */
-h1 {
-    font-size: 28px;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-}
-
-/* Estilo para os subtítulos (Ingredientes, Modo de Preparo) */
-h2 {
-    font-size: 22px;
-    color: #555;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-    margin-top: 20px;
-}
-
-/* Estilização das seções de ingredientes e instruções */
-.secao-ingredientes, .secao-instrucoes {
-    padding: 0 25px 20px 25px;
-}
-
-/* Estilo para as listas de ingredientes e instruções */
-ul, ol {
-    padding-left: 20px;
-}
-
-/* Estilo para cada item da lista */
-li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-    color: #666;
-}
-
-/* Estilos específicos para a lista de ingredientes (não ordenada) */
-.secao-ingredientes ul li {
-    list-style-type: disc; /* Bolinha padrão */
-}
-
-/* Estilos específicos para a lista de instruções (ordenada) */
-.secao-instrucoes ol li {
-    padding-left: 5px;
+.receita-container {
+  max-width: 800px;
+  margin: 0 auto; 
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
